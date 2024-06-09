@@ -5,6 +5,8 @@ describe('Table', () => {
         let haveMail = false;
         cy.get('table[id="dataTable"]').within(() => {
             cy.get('tbody td:nth-child(3)').each(($td) => {
+                let i = $st;
+                console.log(i)
                 let output = $td.text()
                 if (output === mail) {
                     haveMail = true;
