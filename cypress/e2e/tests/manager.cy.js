@@ -1,7 +1,7 @@
 import LoginUI, { AddCustomer, Manager, OpenAccount } from "../pages/manager";
 let login = new LoginUI();
 describe('bank manager flows', () => {
-    it('visit url', () => {
+    it('manager login', () => {
         login.visitURL();
 
         cy.checkDisplay(login.getMainHeading(), 'XYZ Bank');

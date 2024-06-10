@@ -17,6 +17,7 @@
 import './commands';
 require('cypress-xpath');
 import 'cypress-real-events/support';
+import 'cypress-iframe'
 // import './authencommands
 
 // Alternatively you can use CommonJS syntax:
